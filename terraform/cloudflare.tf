@@ -6,7 +6,7 @@ provider "cloudflare" {
 resource "cloudflare_zone_settings_override" "default" {
     name = "${var.cloudflare_domain}"
     settings {
-        ssl = "flexible"
+        ssl = "full"
         always_online = "on"
         always_use_https = "on"
     }
